@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appoint_info_relative"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/show_hosp_image"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/show_hosp_image"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_hosp_desc"
+        android:text="description"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:layout_below="@+id/show_hosp_desc">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_service"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="ENT "
+            />
+
+        <CheckBox
+            android:id="@+id/first_service_chk"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:id="@+id/L2"
+        android:layout_below="@+id/L1">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Second_service"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="RADIOLOGY"
+            />
+
+        <CheckBox
+            android:id="@+id/second_service_chk"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:id="@+id/L3"
+        android:layout_below="@+id/L2">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/third_service"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Neurology"
+            />
+
+        <CheckBox
+            android:id="@+id/Third_service_chk"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:id="@+id/L4"
+        android:layout_below="@+id/L3">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth_service"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Skin Treatment"
+            />
+
+        <CheckBox
+            android:id="@+id/fourth_service_chk"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkout_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L4"
+        android:layout_marginTop="20dp"
+        android:text="CheckOut"
+        android:textColor="#000"/>
+</RelativeLayout>

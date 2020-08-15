@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OPD Consultations</string>
+    <string name="action_settings">Settings</string>
+    <string name="about"><![CDATA[ABOUT \n\n\nThis application will help you to find the right doctor at right place. OPD consultation app provides a description of different departments of hospitals and availability of services . Great initiative by the Ministry of Ayush, this application has been developed for booking an online appointment for Out patient consultation at hospital The OPD consultation application provide a feature and a brief description of an integrated with existing Integrated Hospital Management System which is developed in .net & SQL environment Developed by \n\nDivyam Makar(TL)  \nAbhay Pratap Singh  \nShivansh Amattya  \nR.Abhilash \nAyushi Agarwal \nDipankar Biswas.\nTEAM:-(BAITS FOR BITS)]]></string>
+</resources>

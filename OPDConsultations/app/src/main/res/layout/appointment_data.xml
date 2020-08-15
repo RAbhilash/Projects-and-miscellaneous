@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/relative"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/display_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="@mipmap/snake" />
+
+    <TextView
+        android:id="@+id/header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:hint="NAMEHOSPITAL"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/display_img" />
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/header_tv"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:hint="ADDRESS"
+        android:layout_toEndOf="@+id/display_img"
+        />
+    <TextView
+        android:id="@+id/rating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/address_tv"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:hint="RATING"
+        android:layout_toEndOf="@+id/display_img"
+        />
+    <TextView
+        android:id="@+id/distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/rating_tv"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:hint="DISTANCE"
+        android:ems="5"
+        android:layout_toEndOf="@+id/display_img"
+        />
+
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/distance_tv"
+        android:text="MoreInfo"
+        android:onClick="onClickMoreInfo"
+        android:textColor="#00008b"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+</RelativeLayout>
